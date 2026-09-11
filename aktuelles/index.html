@@ -143,41 +143,53 @@ html,body{background:#f6f4ef !important;margin:0}
 </header>
 <!-- /wp:go-x/section --><main id="main"><div class="ak-wrap"><div class="ak-in">
 <div class="ak-eyebrow">Aktuelles</div>
-<h1 class="ak-h1">Tag der offenen Tür</h1>
+<h1 class="ak-h1">Neues aus der Paul-Klee-Schule</h1>
+<p class="ak-lead">Hinweise, Einladungen und Termine, die wir Ihnen kurzfristig mitteilen möchten. Die jüngste Meldung steht oben.</p>
 
-<div class="ak-termin">
-<div class="ak-termin-z"><span class="ak-tag">25.</span><span class="ak-mon">September 2026</span></div>
-<div class="ak-termin-t">16.00 bis 18.00 Uhr</div>
-</div>
+<!-- ── Meldungen ──────────────────────────────────────────────────────
+     Neue Meldung: den folgenden <article>-Block kopieren und ganz oben
+     einfügen. Aufbau eines Blocks:
+       ak-datum   Datum der Meldung bzw. des Termins
+       ak-titel   Überschrift
+       ak-body    ein oder mehrere <p class="ak-text">
+     Vergangene Meldungen können stehen bleiben — sie rutschen von selbst
+     nach unten. Den Button auf der Startseite bei Bedarf anpassen.
+     ─────────────────────────────────────────────────────────────────── -->
 
-<p class="ak-anrede">Liebe Eltern und Erziehungsberechtigte,<br/>liebe zukünftige Schulkinder (2027/2028),</p>
+<article class="ak-meldung">
+  <div class="ak-datum"><span class="ak-tag">25.</span><span class="ak-mon">September 2026</span><span class="ak-zeit">16.00 – 18.00 Uhr</span></div>
+  <h2 class="ak-titel">Tag der offenen Tür</h2>
+  <div class="ak-body">
+    <p class="ak-anrede">Liebe Eltern und Erziehungsberechtigte,<br/>liebe zukünftige Schulkinder (2027/2028),</p>
+    <p class="ak-text">Wir laden Sie und Ihr Kind herzlich ein zu unserem diesjährigen Tag der offenen Tür.</p>
+    <p class="ak-text">Lernen Sie unser pädagogisches Konzept kennen, kommen Sie mit dem gesamten Schulteam ins Gespräch und stellen Sie uns alle Fragen, die Ihnen auf dem Herzen liegen.</p>
+    <div class="ak-cta">
+      <a class="ak-btn p" href="/anmeldung/">Zur Anmeldung</a>
+      <a class="ak-btn s" href="/kontakt/">Kontakt</a>
+    </div>
+  </div>
+</article>
 
-<p class="ak-text">Wir laden Sie und Ihr Kind herzlich ein zu unserem diesjährigen Tag der offenen Tür.</p>
-
-<p class="ak-text">Lernen Sie unser pädagogisches Konzept kennen, kommen Sie mit dem gesamten Schulteam ins Gespräch und stellen Sie uns alle Fragen, die Ihnen auf dem Herzen liegen.</p>
-
-<div class="ak-cta">
-<a class="ak-btn p" href="/anmeldung/">Zur Anmeldung</a>
-<a class="ak-btn s" href="/kontakt/">Kontakt</a>
-</div>
 </div></div>
 <style>
 .ak-wrap{background:#f6f4ef;padding:56px 20px;font-family:var(--pkc-font,'Inter',-apple-system,Segoe UI,Roboto,sans-serif);color:#1c2433;-webkit-font-smoothing:antialiased}
 .ak-in{max-width:760px;margin:0 auto}
 .ak-eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:800;color:#b13830}
-.ak-h1{font-size:clamp(30px,4.4vw,44px);font-weight:800;margin:8px 0 24px;line-height:1.08}
-.ak-termin{display:flex;flex-wrap:wrap;align-items:center;gap:18px;background:#fff;border:1px solid #e8e6df;border-left:5px solid #d97b3a;border-radius:14px;padding:20px 24px;box-shadow:0 4px 16px rgba(20,26,40,.05);margin:0 0 30px}
-.ak-termin-z{display:flex;align-items:baseline;gap:8px}
-.ak-tag{font-size:34px;font-weight:800;color:#d97b3a;line-height:1}
-.ak-mon{font-size:17px;font-weight:700;color:#1c2433}
-.ak-termin-t{font-size:17px;font-weight:700;color:#55606e;padding-left:18px;border-left:1px solid #e8e6df}
-.ak-anrede{font-size:16.5px;line-height:1.7;color:#1c2433;font-weight:600;margin:0 0 18px}
-.ak-text{font-size:16px;line-height:1.7;color:#455063;margin:0 0 16px}
-.ak-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.ak-btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none}
+.ak-h1{font-size:clamp(30px,4.4vw,44px);font-weight:800;margin:8px 0 8px;line-height:1.08}
+.ak-lead{font-size:16px;color:#55606e;line-height:1.65;margin:0 0 34px;max-width:620px}
+.ak-meldung{background:#fff;border:1px solid #e8e6df;border-left:5px solid #d97b3a;border-radius:14px;padding:24px 26px 26px;box-shadow:0 4px 16px rgba(20,26,40,.05);margin:0 0 20px}
+.ak-datum{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:6px}
+.ak-tag{font-size:30px;font-weight:800;color:#d97b3a;line-height:1}
+.ak-mon{font-size:16px;font-weight:700;color:#1c2433}
+.ak-zeit{font-size:14px;font-weight:700;color:#8a929c;padding-left:10px;border-left:1px solid #e8e6df}
+.ak-titel{font-size:23px;font-weight:800;margin:6px 0 16px;line-height:1.2}
+.ak-anrede{font-size:16px;line-height:1.7;color:#1c2433;font-weight:600;margin:0 0 16px}
+.ak-text{font-size:16px;line-height:1.7;color:#455063;margin:0 0 14px}
+.ak-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.ak-btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none}
 .ak-btn.p{background:#b13830;color:#fff}.ak-btn.p:hover{background:#8f2c26}
 .ak-btn.s{background:#fff;color:#455063;border:1.5px solid #dfdcd3}.ak-btn.s:hover{border-color:#b13830;color:#b13830}
-@media(max-width:560px){.ak-termin-t{padding-left:0;border-left:0}}
+@media(max-width:560px){.ak-zeit{padding-left:0;border-left:0;width:100%}}
 </style></main><!-- wp:go-x/section {"section":{"id":"1c4e926b-0dc3-4ab9-9b40-cb17ad4528b4"},"rootClasses":"section section-root animated-element section-geometry section-geometry-rectangle","rootProps":{"data-zone-type":"footer"},"bgClasses":"section-inner section-edge18Inner","contentClasses":"section-content","usedGeometryAttr":"rectangle","sectionSettingsStyles":{"backgroundColor":"#405f83","color":"#e4f0ed"},"styles":{"u002du002dheading-color-h1":"#e4f0ed","u002du002dfont-family-h1":"IstokWeb","u002du002dfont-size-h1":"40px","u002du002dfont-weight-h1":"normal","u002du002dword-wrap-h1":"break-word","u002du002doverflow-wrap-h1":"break-word","u002du002dfont-style-h1":"normal","u002du002dtext-decoration-h1":"none","u002du002dletter-spacing-h1":"normal","u002du002dline-height-h1":"normal","u002du002dtext-transform-h1":"none","u002du002dtablet-font-downscale-h1":0.875,"u002du002dmobile-font-downscale-h1":0.875,"u002du002dheading-color-h2":"#e4f0ed","u002du002dfont-family-h2":"IstokWeb","u002du002dfont-size-h2":"33px","u002du002dfont-weight-h2":"normal","u002du002dword-wrap-h2":"break-word","u002du002doverflow-wrap-h2":"break-word","u002du002dfont-style-h2":"normal","u002du002dtext-decoration-h2":"none","u002du002dletter-spacing-h2":"normal","u002du002dline-height-h2":"normal","u002du002dtext-transform-h2":"none","u002du002dtablet-font-downscale-h2":0.875,"u002du002dmobile-font-downscale-h2":0.875,"u002du002dheading-color-h3":"#e4f0ed","u002du002dfont-family-h3":"IstokWeb","u002du002dfont-size-h3":"28px","u002du002dfont-weight-h3":"normal","u002du002dword-wrap-h3":"break-word","u002du002doverflow-wrap-h3":"break-word","u002du002dfont-style-h3":"normal","u002du002dtext-decoration-h3":"none","u002du002dletter-spacing-h3":"normal","u002du002dline-height-h3":"normal","u002du002dtext-transform-h3":"none","u002du002dtablet-font-downscale-h3":0.875,"u002du002dmobile-font-downscale-h3":0.875,"u002du002dheading-color-h4":"#e4f0ed","u002du002dfont-family-h4":"IstokWeb","u002du002dfont-size-h4":"23px","u002du002dfont-weight-h4":"normal","u002du002dword-wrap-h4":"break-word","u002du002doverflow-wrap-h4":"break-word","u002du002dfont-style-h4":"normal","u002du002dtext-decoration-h4":"none","u002du002dletter-spacing-h4":"normal","u002du002dline-height-h4":"normal","u002du002dtext-transform-h4":"none","u002du002dtablet-font-downscale-h4":0.875,"u002du002dmobile-font-downscale-h4":0.875,"u002du002dheading-color-h5":"#e4f0ed","u002du002dfont-family-h5":"IstokWeb","u002du002dfont-size-h5":"19px","u002du002dfont-weight-h5":"normal","u002du002dword-wrap-h5":"break-word","u002du002doverflow-wrap-h5":"break-word","u002du002dfont-style-h5":"normal","u002du002dtext-decoration-h5":"none","u002du002dletter-spacing-h5":"normal","u002du002dline-height-h5":"normal","u002du002dtext-transform-h5":"none","u002du002dtablet-font-downscale-h5":0.875,"u002du002dmobile-font-downscale-h5":0.875,"u002du002dheading-color-h6":"#e4f0ed","u002du002dfont-family-h6":"IstokWeb","u002du002dfont-size-h6":"16px","u002du002dfont-weight-h6":"normal","u002du002dword-wrap-h6":"break-word","u002du002doverflow-wrap-h6":"break-word","u002du002dfont-style-h6":"normal","u002du002dtext-decoration-h6":"none","u002du002dletter-spacing-h6":"normal","u002du002dline-height-h6":"normal","u002du002dtext-transform-h6":"none","u002du002dtablet-font-downscale-h6":0.875,"u002du002dmobile-font-downscale-h6":0.875,"u002du002dtext-container-color":"#e4f0ed","u002du002dtext-container-anchor-color":"#e4f0ed","u002du002dfont-family":"Lora","u002du002dfont-size":"16px","u002du002dfont-weight":"normal","u002du002dword-wrap":"break-word","u002du002doverflow-wrap":"break-word","u002du002dfont-style":"normal","u002du002dtext-decoration":"none","u002du002dletter-spacing":"normal","u002du002dline-height":"normal","u002du002dtext-transform":"none","u002du002dtablet-font-downscale":0.875,"u002du002dmobile-font-downscale":0.875,"u002du002dsection-geometry":"section-geometry-rectangle","u002du002dheader-height":"100%"}} -->
 <footer class="pkf">
 <div class="pkf-wrap">
